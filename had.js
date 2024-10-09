@@ -104,5 +104,12 @@ document.addEventListener('keydown', (e) => {
 startButton.addEventListener('click', startGame);
 restartButton.addEventListener('click', startGame);
 
+// Přidání funkce pro návrat na index.html
+const backButton = document.querySelector('.back-button');
+
+backButton.addEventListener('click', () => {
+    window.location.href = './index.html'; // Přesměrování na index.html
+});
+
 initGame(); // Initialize the game board without starting the game loop
 gameOverPopup.style.display = 'none'; // Hide the popup initially
